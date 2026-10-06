@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Club Members</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+        }
+
+        .box {
+            width: 350px;
+            margin: 80px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h2>Campus Club Members</h2>
+
+    <form action="/members" method="POST">
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Student Name"
+            required>
+
+        <input
+            type="text"
+            name="regNo"
+            placeholder="Register Number"
+            required>
+
+        <input
+            type="text"
+            name="club"
+            placeholder="Club Name"
+            required>
+
+        <button type="submit">
+            Add Member
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
